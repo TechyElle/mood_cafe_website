@@ -1,0 +1,430 @@
+<!--
+    FILE: index.html
+    PROJECT: Mood Cafe and Lounge Bar
+    AUTHOR: Hand-coded and designed by Cielle Mae Peñamora
+    DATE: 2026
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Cafe &amp; Lounge Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Page Wrapper -->
+    <div class="page-shell">
+
+        <!-- Top Navigation Bar -->
+        <header class="topbar">
+            <a class="brand" href="#">Mood Cafe &amp; Lounge Bar</a>
+
+            <nav class="main-nav" aria-label="Primary">
+                <div class="nav-links">
+                    <a class="nav-link active" href="#" onclick="showSection('home'); return false;">Home</a>
+                    <a class="nav-link" href="#" onclick="showSection('menu'); return false;">Menu</a>
+                    <a class="nav-link" href="#" onclick="showSection('music'); return false;">Music</a>
+                    <a class="nav-link" href="#" onclick="showSection('jobs'); return false;">Jobs</a>
+                </div>
+                <a class="reserve-btn" href="#">Reserve a Table</a>
+            </nav>
+        </header>
+
+        <!-- Two-Column Hero Layout -->
+        <main id="home" class="page-section hero-layout">
+
+            <!-- Left Panel: Image Area and Quick Info -->
+            <section class="hero-visual" aria-label="Cafe interior and quick details">
+                <div class="hero-overlay">
+
+                    <!-- Highlights and Hours Box -->
+                    <div class="highlights-box">
+                        <h2>Highlights</h2>
+                        <ul>
+                            <li>Handcrafted specialty drinks and cocktails</li>
+                            <li>Delicious food prepared fresh daily</li>
+                            <li>Live music and DJ nights every weekend</li>
+                            <li>Comfortable and stylish lounge seating</li>
+                            <li>Private event bookings available</li>
+                        </ul>
+                        <h2>Hours</h2>
+                        <p>Mon – Sat</p>
+                        <p>12PM - 12AM</p>
+                        <p>Sun</p>
+                        <p>9AM - 9PM</p>
+                    </div>
+
+                    <!-- Bottom Contact Information -->
+                    <div class="contact-strip">
+                        <section>
+                            <h2>Location</h2>
+                            <p>Bonifacio St. Pob. Uno,</p>
+                            <p>Infanta, Quezon, Philippines</p>
+                        </section>
+
+                        <section>
+                            <h2>Contact</h2>
+                            <p><a href="mailto:info@moodcafe.com">info@moodcafe.com</a></p>
+                            <p><a href="tel:+63912345678">+63 912 345 678</a></p>
+                        </section>
+
+                        <section>
+                            <h2>Connect</h2>
+                            <p><a href="https://www.facebook.com/profile.php?id=61575905944306" target="_blank" rel="noreferrer">Facebook <span aria-hidden="true">f</span></a></p>
+                            <p><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram <span aria-hidden="true">&#9673;</span></a></p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Panel: Intro Text and Highlight Cards -->
+            <section class="hero-copy" aria-label="Cafe introduction">
+                <div class="copy-inner">
+
+                    <!-- Main Wordmark -->
+                    <img class="wordmark-image" src="logo.png" alt="Mood">
+
+                    <!-- Tagline -->
+                    <p class="tagline">Coffee by Day &bull; Cocktails by Night &bull; Always in the Mood</p>
+
+                    <!-- Introductory Description -->
+                    <p class="lead">
+                        Nestled along Bonifacio Street in Infanta, Quezon, Mood Cafe and Lounge Bar is where your day begins with a perfectly brewed cup of coffee and ends with hand-crafted cocktails in a warm, intimate setting. We are more than just a place to eat and drink &mdash; we are a space to unwind, connect, and simply be.
+                    </p>
+
+                    <!-- Promo / Special Offer -->
+                    <p class="special">
+                        <span class="special-mark">&#10022;</span>
+                        <span class="special-label">Weekend Special:</span>
+                        Buy any 2 signature drinks and get a free dessert of the day. Valid Friday &ndash; Sunday while stocks last.
+                    </p>
+                </div>
+
+                <!-- Featured Category Cards -->
+                <div class="feature-cards" aria-label="Highlights">
+                    <article class="feature-card">
+                        <img src="coffee.png" alt="Cup of coffee">
+                        <h2>specialty coffee</h2>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </article>
+
+                    <article class="feature-card">
+                        <img src="cocktail.jpg" alt="Cocktail drink">
+                        <h2>craft cocktails</h2>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </article>
+
+                    <article class="feature-card">
+                        <img src="meals.jpg" alt="Meals served at Mood Cafe">
+                        <h2>gourmet meals</h2>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </article>
+
+                    <article class="feature-card">
+                        <img src="events.jpg" alt="Mood Cafe event setup">
+                        <h2>private events</h2>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Menu Section -->
+        <section id="menu" class="page-section content-section">
+            <div class="section-panel menu-panel">
+                <div class="menu-hero">
+                    <div class="menu-hero-copy">
+                        <p class="menu-eyebrow">Curated for every mood</p>
+                        <h2>Food &amp; Drinks</h2>
+                        <p class="menu-intro">
+                            From slow morning coffee to late-night cocktails, our menu blends comfort, flavor, and a little indulgence. Explore some of our most-loved picks below.
+                        </p>
+                    </div>
+
+                    <div class="menu-highlight-card" aria-label="Menu quick highlights">
+                        <p class="menu-highlight-label">Mood Favorites</p>
+                        <ul class="menu-highlight-list">
+                            <li>Signature matcha and espresso drinks</li>
+                            <li>Hearty meals, snacks, and desserts</li>
+                            <li>Craft cocktails for lounge nights</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="menu-tags" aria-label="Popular menu categories">
+                    <span>Coffee</span>
+                    <span>Matcha</span>
+                    <span>Milkshakes</span>
+                    <span>Meals</span>
+                    <span>Cocktails</span>
+                    <span>Snacks</span>
+                </div>
+
+                <div class="menu-gallery" aria-label="Menu image gallery">
+                    <figure class="menu-gallery-card">
+                        <img src="matcha.jpg" alt="Matcha drinks">
+                        <figcaption>
+                            <span class="menu-card-title">Matcha</span>
+                            <span class="menu-card-meta">Smooth, earthy, and refreshing</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="menu-gallery-card">
+                        <img src="milkshakes.jpg" alt="Milkshakes menu">
+                        <figcaption>
+                            <span class="menu-card-title">Milkshakes</span>
+                            <span class="menu-card-meta">Creamy blends with dessert energy</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="menu-gallery-card">
+                        <img src="meals.jpg" alt="Meals menu">
+                        <figcaption>
+                            <span class="menu-card-title">Meals</span>
+                            <span class="menu-card-meta">Comfort dishes made for sharing</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="menu-gallery-card">
+                        <img src="menu.png" alt="Main menu page">
+                        <figcaption>
+                            <span class="menu-card-title">House Menu</span>
+                            <span class="menu-card-meta">A quick look at bestsellers</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="menu-gallery-card">
+                        <img src="menu 2.png" alt="Second menu page">
+                        <figcaption>
+                            <span class="menu-card-title">Menu Volume 2</span>
+                            <span class="menu-card-meta">More flavors to match the vibe</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="menu-gallery-card">
+                        <img src="alcoholic drinks.png" alt="Alcoholic drinks menu">
+                        <figcaption>
+                            <span class="menu-card-title">Alcoholic Drinks</span>
+                            <span class="menu-card-meta">Signature pours and casual classics</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="menu-gallery-card">
+                        <img src="alcoholic drinks 2.png" alt="Second alcoholic drinks menu">
+                        <figcaption>
+                            <span class="menu-card-title">Cocktail List</span>
+                            <span class="menu-card-meta">Bold mixes for after-dark moments</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="menu-gallery-card">
+                        <img src="snacks.png" alt="Snacks menu">
+                        <figcaption>
+                            <span class="menu-card-title">Snacks</span>
+                            <span class="menu-card-meta">Light bites for every table</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="menu-gallery-card">
+                        <img src="drinks.jpg" alt="Drinks menu">
+                        <figcaption>
+                            <span class="menu-card-title">Drinks</span>
+                            <span class="menu-card-meta">From chill coolers to cafe staples</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Section -->
+        <section id="music" class="page-section content-section">
+<div class="section-panel music-panel">
+                <div class="menu-hero">
+                    <div class="menu-hero-copy">
+                        <p class="menu-eyebrow">Live every night</p>
+                        <h2>Live Music &amp; Events</h2>
+                        <p class="menu-intro">
+                            As the sun sets, Mood transforms. Our lounge comes alive with curated sounds and live performances from talented local and regional artists.
+                        </p>
+                        <div class="menu-tags" aria-label="Music and event features">
+                            <span>Games</span>
+                            <span>Happy Holidays</span>
+                            <span>Big Groups</span>
+                            <span>Arts</span>
+                            <span>Celebrations</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-highlight-card" aria-label="Music quick highlights">
+                        <p class="menu-highlight-label">Live Favorites</p>
+                        <ul class="menu-highlight-list">
+                            <li>Live bands Fri/Sat nights</li>
+                            <li>Open Mic Wednesdays</li>
+                            <li>Weekend DJ sets</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="menu-gallery" aria-label="Music and events gallery">
+                    <figure class="menu-gallery-card">
+                        <img src="games.jpg" alt="Guests enjoying games at Mood Cafe">
+                        <figcaption>
+                            <span class="menu-card-title">Games</span>
+                            <span class="menu-card-meta">Fun table moments that keep the night lively</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="menu-gallery-card">
+                        <img src="happy holidays.jpg" alt="Holiday celebration at Mood Cafe">
+                        <figcaption>
+                            <span class="menu-card-title">Happy Holidays</span>
+                            <span class="menu-card-meta">Seasonal celebrations filled with warmth and music</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="menu-gallery-card">
+                        <img src="big groups.jpg" alt="Large group gathering at Mood Cafe">
+                        <figcaption>
+                            <span class="menu-card-title">Big Groups</span>
+                            <span class="menu-card-meta">Shared lounge spaces made for friends and gatherings</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="menu-gallery-card">
+                        <img src="arts.jpg" alt="Art-themed event at Mood Cafe">
+                        <figcaption>
+                            <span class="menu-card-title">Arts</span>
+                            <span class="menu-card-meta">Creative nights where music and expression meet</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="menu-gallery-card">
+                        <img src="celebrations.jpg" alt="Celebration event at Mood Cafe">
+                        <figcaption>
+                            <span class="menu-card-title">Celebrations</span>
+                            <span class="menu-card-meta">Special moments made brighter with food, music, and company</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <h3>Weekly Programme</h3>
+                <ul>
+                    <li>Monday &amp; Tuesday &mdash; Acoustic Chill Playlist</li>
+                    <li>Wednesday &mdash; Open Mic Night, 7:00 PM - 10:00 PM</li>
+                    <li>Thursday &mdash; Jazz &amp; Soul Session, 8:00 PM - 11:00 PM</li>
+                    <li>Friday &mdash; Live Band Night, 9:00 PM - 1:00 AM</li>
+                    <li>Saturday &mdash; DJ Set &amp; Dance Night, 9:00 PM - 2:00 AM</li>
+                    <li>Sunday &mdash; Acoustic Brunch, 11:00 AM - 2:00 PM</li>
+                </ul>
+
+                <p>
+                    Are you a musician or band interested in performing at Mood? Send your profile and sample recording to
+                    <a href="mailto:music@moodcafe.ph">music@moodcafe.ph</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Jobs Section -->
+        <section id="jobs" class="page-section content-section">
+<div class="section-panel jobs-panel">
+                <div class="menu-hero">
+                    <div class="menu-hero-copy">
+                        <p class="menu-eyebrow">We're hiring</p>
+                        <h2>Join the Mood Team</h2>
+                        <p class="menu-intro">
+                            We are a small but passionate team dedicated to creating memorable experiences for every guest who walks through our doors.
+                        </p>
+                        <div class="menu-tags" aria-label="Jobs and workplace highlights">
+                            <span>Mood Team</span>
+                            <span>Counter</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-highlight-card" aria-label="Careers highlights">
+                        <p class="menu-highlight-label">Open Roles</p>
+                        <ul class="menu-highlight-list">
+                            <li>Barista/Staff</li>
+                            <li>Bartenders</li>
+                            <li>Service Crew</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="menu-gallery" aria-label="Jobs and workplace gallery">
+                    <figure class="menu-gallery-card">
+                        <img src="mood team.jpg" alt="Mood Cafe team members together">
+                        <figcaption>
+                            <span class="menu-card-title">Mood Team</span>
+                            <span class="menu-card-meta">The people behind the service, energy, and hospitality at Mood</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="menu-gallery-card">
+                        <img src="counter.jpg" alt="Mood Cafe service counter">
+                        <figcaption>
+                            <span class="menu-card-title">Counter</span>
+                            <span class="menu-card-meta">A closer look at the front counter where coffee, service, and first impressions meet</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <h3>Current Openings</h3>
+                <ul>
+                    <li>Barista / Cafe Staff &mdash; Part-time &amp; Full-time</li>
+                    <li>Bartender / Mixologist &mdash; Full-time</li>
+                    <li>Waiter / Service Crew &mdash; Part-time &amp; Full-time</li>
+                    <li>Social Media &amp; Content Creator &mdash; Flexible / Project-based</li>
+                    <li>Events Coordinator &mdash; Part-time</li>
+                </ul>
+
+                <h3>How to Apply</h3>
+                <p>
+                    Send your resume and a short introduction to
+                    <a href="mailto:careers@moodcafe.ph">careers@moodcafe.ph</a>.
+                    Walk-in applications are also welcome during cafe hours.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p>&copy; 2026 Mood Cafe &amp; Lounge Bar. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript for Navigation -->
+    <script>
+        function showSection(id) {
+            var sections = document.querySelectorAll('.page-section');
+            var links = document.querySelectorAll('.nav-link');
+            var body = document.body;
+
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+
+            for (var j = 0; j < links.length; j++) {
+                links[j].className = links[j].className.replace(' active', '');
+            }
+
+            document.getElementById(id).style.display = 'grid';
+
+            if (id !== 'home') {
+                document.getElementById(id).style.display = 'flex';
+                body.classList.add('section-view');
+            } else {
+                body.classList.remove('section-view');
+            }
+
+            for (var k = 0; k < links.length; k++) {
+                if (links[k].getAttribute('onclick').indexOf("'" + id + "'") !== -1) {
+                    links[k].className += ' active';
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
